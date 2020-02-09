@@ -18,6 +18,8 @@ public:
 private slots:
     void on_ConfirmBtn_clicked();
 
+    void on_password_textEdited(const QString);
+
 private:
     Ui::Register *ui;
 };

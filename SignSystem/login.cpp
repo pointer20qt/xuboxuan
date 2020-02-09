@@ -33,7 +33,6 @@ void Login::on_RegisterBtn_clicked()
 {
     Register *r=new Register();
     r->show();
-    this->close();
 }
 void Login::on_LoginBtn_clicked()
 {

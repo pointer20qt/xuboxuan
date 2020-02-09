@@ -20,7 +20,7 @@ Register::~Register()
 }
 
 void Register::on_ConfirmBtn_clicked()
-{
+{   
     if(ui->number->text()!=NULL&&ui->username->text()!=NULL&&ui->Class->text()!=NULL&&ui->password->text()!=NULL)
     {
         QSqlQuery q;
@@ -35,4 +35,9 @@ void Register::on_ConfirmBtn_clicked()
     {
         QMessageBox::warning(this,"提示！","请全部填写");
     }  
+}
+
+void Register::on_password_textEdited(const QString)
+{
+    ui->password->setEchoMode(QLineEdit::Password);
 }
