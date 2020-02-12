@@ -12,6 +12,7 @@ public:
 		width = wid;
 	}
 };
+using b = Box;
 class BigBox{
 public:
 	void Print(int width, Box &box)
@@ -28,7 +29,7 @@ void printWidth(Box box)
 // 程序的主函数
 int main()
 {
-	Box box;
+	b box;
 	BigBox big;
 	// 使用成员函数设置宽度
 	box.setWidth(10.0);
